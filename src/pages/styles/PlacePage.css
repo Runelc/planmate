@@ -1,0 +1,162 @@
+.placePageContainer {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.placePageContent p {
+	font-size: 1rem;
+	padding: 0.25rem 0;
+	width: 100%;
+}
+.placePageContact a {
+	font-size: 1rem;
+	margin: 0;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.placePageImages {
+	max-width: 100%;
+	width: 100%;
+	height: 40vh;
+	overflow-x: auto;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	position: fixed;
+	overflow-y: hidden;
+	z-index: 1;
+	top: 0;
+}
+
+.placePageImages::-webkit-scrollbar {
+	height: 0;
+}
+
+.placePageImg {
+	min-width: 100%;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	scroll-snap-align: center;
+}
+.placePageMapImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.placePageContent {
+	margin-top: 38vh;
+	min-height: 62vh;
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+	background-color: var(--dark);
+	position: relative;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+
+.placePageName {
+	color: white;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.openingsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.openingHours p {
+	font-size: 1rem;
+}
+
+.openingDays p {
+	font-size: 1rem;
+}
+.openingDays {
+	display: flex;
+	gap: 0.5rem;
+	font-size: 1rem;
+}
+
+.placePageContact {
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.p-container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	height: fit-content;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 200;
+	color: white;
+	padding: 0.25rem 0;
+}
+
+.placePageLocation {
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.placeMap {
+	width: 100%;
+	height: 200px;
+	align-self: center;
+	display: block;
+	padding-top: 0.5rem;
+	margin: 0;
+}
+
+.placeMap iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.placePageDescription {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.backIcon {
+	position: fixed;
+	z-index: 100000;
+	font-size: 2rem;
+	top: 1rem;
+	left: 1rem;
+	color: white;
+	filter: drop-shadow(0 0 10px black);
+}
+
+.interactions {
+	position: absolute;
+	top: -2.5rem;
+	right: 1rem;
+}
+
+.likePlace {
+	font-size: 2rem;
+	color: white;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.47));
+}
+
+.liked {
+	color: var(--red);
+}
