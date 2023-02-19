@@ -4,7 +4,7 @@ A project for school. Based on a given case which stated that we would be develo
 
 # How to view the project
 
-1. Visit https://planmate.delu.dk/ to view the project in real time.
+1. Visit https://planmate.runelc.dk/ to view the project in real time.
 
 2. Clone this repository, install node modules, run locally to try out the project
 
